@@ -1,11 +1,9 @@
 import { Elysia } from 'elysia';
-import testRoute from './test/route.test';
-
-const allRoutes = [testRoute];
+import routes from '@routes/index';
 
 const routesPlugin = new Elysia();
 
-allRoutes.forEach((route) => {
+routes.forEach((route) => {
   routesPlugin.group(route.path, (app) => app.use(route.plugin));
 });
 

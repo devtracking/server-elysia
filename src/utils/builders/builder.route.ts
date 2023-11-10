@@ -1,13 +1,13 @@
 import Elysia from 'elysia';
-import type { RouteInfo } from '../../types';
+import type { RouteInfo } from 'types';
 
-const RouteBuilder = (path: string): RouteInfo => {
-  const plugin = new Elysia();
-  const routeInfo: RouteInfo = {
-    path,
-    plugin,
-  };
-  return routeInfo;
-};
+class RouteBuilder {
+  path: string;
+  plugin: Elysia;
+  constructor(path: string) {
+    this.path = path;
+    this.plugin = new Elysia();
+  }
+}
 
 export default RouteBuilder;

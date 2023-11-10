@@ -1,5 +1,5 @@
 import { Elysia } from 'elysia';
-import routesPlugin from './routes/routes.plugin';
+import routesPlugin from './plugins/plugin.routes';
 
 const app = new Elysia().use(routesPlugin).listen(3000);
 
