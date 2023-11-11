@@ -1,1 +1,1 @@
-export * from './type.route';
+export * from './route.type';

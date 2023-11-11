@@ -1,5 +1,5 @@
-import authRoute from "./route.auth";
 
-const routes = [authRoute];
+
+const routes = [];
 
 export default routes;
