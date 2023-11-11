@@ -1,19 +1,19 @@
 export default class SocketSession {
-  sessions: Map<number, string>;
+  clients: Map<number, string>;
   constructor() {
-    this.sessions = new Map<number, string>();
+    this.clients = new Map<number, string>();
   }
 
-  addSession(id: number, session: string) {
-    this.sessions.set(id, session);
+  addClient(id: number, session: string) {
+    this.clients.set(id, session);
   }
 
-  getSession(id: number) {
-    return this.sessions.get(id);
+  getClient(id: number) {
+    return this.clients.get(id);
   }
 
-  removeSession(id: number) {
-    this.sessions.delete(id);
+  removeClient(id: number) {
+    this.clients.delete(id);
   }
 }
 

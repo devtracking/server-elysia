@@ -6,7 +6,7 @@ const session = new SocketSession();
 const socket = new Elysia().ws('/wstest', {
   open(ws) {
     console.log(ws.data.query);
-    session.addSession(ws.id, 'session');
+    session.addClient(ws.id, 'SUPER_SECRET_DATABASE_IDENTIFIER');
   },
   message(ws, message) {
     ws.send(message);
