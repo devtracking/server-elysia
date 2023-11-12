@@ -1,7 +1,7 @@
 import { Elysia } from 'elysia';
-import SocketSession from '@/handlers/socket/session.handler';
+import {SocketHandler} from '@handlers/index';
 
-const session = new SocketSession();
+const session = new SocketHandler();
 
 const socket = new Elysia().ws('/wstest', {
   open(ws) {

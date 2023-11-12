@@ -1,5 +1,5 @@
+import { profileRoute } from './user';
 
-
-const routes = [];
+const routes = [profileRoute];
 
 export default routes;

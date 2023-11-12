@@ -1,4 +1,6 @@
-export default class SocketSession {
+import type { SocketPlugin } from 'types';
+
+class SocketHandler implements SocketPlugin {
   clients: Map<number, string>;
   constructor() {
     this.clients = new Map<number, string>();
@@ -17,3 +19,4 @@ export default class SocketSession {
   }
 }
 
+export { SocketHandler };

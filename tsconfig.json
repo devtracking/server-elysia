@@ -67,7 +67,8 @@
       "@controllers/*": ["src/controllers/*"],
       "@plugins/*": ["src/plugins/*"],
       "@utils/*": ["src/utils/*"],
-      "@builders/*": ["src/utils/builders/*"]
+      "@builders/*": ["src/utils/builders/*"],
+      "@handlers/*": ["src/handlers/*"],
     }
   }
 }
