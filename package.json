@@ -6,7 +6,9 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "axios": "^1.6.1",
+    "elysia": "latest",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "bun-types": "latest"

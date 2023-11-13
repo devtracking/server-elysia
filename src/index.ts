@@ -1,8 +1,6 @@
 import { Elysia } from 'elysia';
-import routesPlugin from './routes/routes.plugin';
+import { outputUtils } from '@utils/index';
 
-const app = new Elysia().use(routesPlugin).listen(3000);
+const app = new Elysia().listen(3000);
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
-);
+outputUtils.info('Server running at http://localhost:3000');
