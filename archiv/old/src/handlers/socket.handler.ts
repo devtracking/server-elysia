@@ -1,8 +1,12 @@
+import Elysia from 'elysia';
+import { InputSchema } from 'elysia';
 import type { SocketPlugin } from 'types';
 
-class SocketHandler implements SocketPlugin {
+class SocketHandler extends Elysia implements SocketPlugin {
   clients: Map<number, string>;
+
   constructor() {
+    super();
     this.clients = new Map<number, string>();
   }
 
