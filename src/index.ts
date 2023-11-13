@@ -1,5 +1,6 @@
 import { Elysia } from 'elysia';
 import { outputUtils } from '@utils/index';
+import { SocketPlugin } from './modules/plugin';
 
 const app = new Elysia().listen(3000);
 

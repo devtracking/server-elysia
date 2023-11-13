@@ -8,5 +8,9 @@ export class ElysiaPlugin extends Elysia implements IElysiaPlugin {
     super();
     this.pluginType = pluginType;
   }
+
+  toString() {
+    return `ElysiaPlugin (${this.pluginType})`;
+  }
 }
 
